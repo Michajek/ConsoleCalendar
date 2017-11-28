@@ -1,0 +1,7 @@
+C:\Users\Michaj\source\repos\ConsoleCalendar\ConsoleCalendar\bin\Debug\ConsoleCalendar.exe.config
+C:\Users\Michaj\source\repos\ConsoleCalendar\ConsoleCalendar\bin\Debug\ConsoleCalendar.exe
+C:\Users\Michaj\source\repos\ConsoleCalendar\ConsoleCalendar\bin\Debug\ConsoleCalendar.pdb
+C:\Users\Michaj\source\repos\ConsoleCalendar\ConsoleCalendar\obj\Debug\ConsoleCalendar.csprojResolveAssemblyReference.cache
+C:\Users\Michaj\source\repos\ConsoleCalendar\ConsoleCalendar\obj\Debug\ConsoleCalendar.csproj.CoreCompileInputs.cache
+C:\Users\Michaj\source\repos\ConsoleCalendar\ConsoleCalendar\obj\Debug\ConsoleCalendar.exe
+C:\Users\Michaj\source\repos\ConsoleCalendar\ConsoleCalendar\obj\Debug\ConsoleCalendar.pdb
