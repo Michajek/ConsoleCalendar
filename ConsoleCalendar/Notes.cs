@@ -13,12 +13,9 @@ namespace ConsoleCalendar
         public static void AddNotes()
         {
             Console.Clear();
-            Console.Write("Podaj rok:");
-            int choosenNoteYear = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Podaj miesiąc:");
-            int choosenNoteMonth = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Podaj dzień:");
-            int choosenNoteDay = Convert.ToInt32(Console.ReadLine());
+            int choosenNoteYear = Answer.IntParser("Podaj rok:", 3000);
+            int choosenNoteMonth = Answer.IntParser("Podaj miesiąc:", 12);
+            int choosenNoteDay = Answer.IntParser("Podaj dzień:", 31);
 
             Console.Write("Dodaj notatkę:");
             string choosenNote = Console.ReadLine();
@@ -37,7 +34,6 @@ namespace ConsoleCalendar
 
 
         }
-
         public static void DisplayNotes()
         {
             Console.Clear();

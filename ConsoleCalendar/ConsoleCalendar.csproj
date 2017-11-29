@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Answer.cs" />
     <Compile Include="DrawCalendar.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Notes.cs" />

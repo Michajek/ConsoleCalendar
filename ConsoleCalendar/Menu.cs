@@ -31,10 +31,8 @@ namespace ConsoleCalendar
             else if (firstChoose == "2")
             {
                 Console.Clear();
-                Console.Write("Podaj rok:");
-                int choosenYear = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Podaj miesiąc:");
-                int choosenMonth = Convert.ToInt32(Console.ReadLine());
+                int choosenYear = Answer.IntParser("Podaj rok:", 3000);
+                int choosenMonth = Answer.IntParser("Podaj miesiąc:", 12);
                 DrawCalendar.DisplayMonth(choosenYear, choosenMonth);
 
             }
