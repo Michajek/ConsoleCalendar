@@ -47,12 +47,46 @@ namespace ConsoleCalendar
                 counter++;
                 Console.WriteLine("\t" + counter + ".  " + line);
             }
-
-            
-            Console.ReadLine();
-            Console.Clear();
-            Menu.FirstMenu();
+            Console.WriteLine("1. Usuń notatkę");
+            Console.WriteLine("Enter by wrócić");
+            string chooseDelete = Console.ReadLine();
+            if (chooseDelete == "1") 
+            {
+                Console.WriteLine("Usuń notatkę numer:");
+                string lineToDelete = Console.ReadLine();
+                int intLineToDelete;
+                if (Int32.TryParse(lineToDelete, out intLineToDelete))
+                {
+                    intLineToDelete = Convert.ToInt32(lineToDelete);
+                    DeleteNotes(intLineToDelete);
+                }
+                else
+                {
+                    DisplayNotes();
+                }
+               
+            }
+            else
+            {
+                Console.Clear();
+                Menu.FirstMenu();
+            }
+        }
+        public static void DeleteNotes(int lineToDelete)
+        {
+            var file = new List<string>(System.IO.File.ReadAllLines(@".\WriteText.txt"));
+            if (file.Count >= lineToDelete)
+            {
+                file.RemoveAt(lineToDelete - 1);
+                File.WriteAllLines(@".\WriteText.txt", file.ToArray());
+                DisplayNotes();
+            }
+            else
+            {
+                DisplayNotes();
+            }
 
         }
+
     }
 }
