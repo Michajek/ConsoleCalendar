@@ -15,7 +15,8 @@ namespace ConsoleCalendar
             Console.Clear();
             int choosenNoteYear = Answer.IntParser("Podaj rok:", 3000);
             int choosenNoteMonth = Answer.IntParser("Podaj miesiąc:", 12);
-            int choosenNoteDay = Answer.IntParser("Podaj dzień:", 31);
+            int daysInActualMonth = DateTime.DaysInMonth(choosenNoteYear, choosenNoteMonth);
+            int choosenNoteDay = Answer.IntParser("Podaj dzień:", daysInActualMonth);
 
             Console.Write("Dodaj notatkę:");
             string choosenNote = Console.ReadLine();
